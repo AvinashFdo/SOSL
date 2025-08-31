@@ -1055,3 +1055,44 @@ textarea.form-control {
   -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
 }
+
+.admin-login-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #65c0ba;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.admin-login-btn:hover {
+    background: #4a90a4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    color: white;
+    text-decoration: none;
+}
+
+.admin-login-btn i {
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .admin-login-btn {
+        bottom: 15px;
+        right: 15px;
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+}
